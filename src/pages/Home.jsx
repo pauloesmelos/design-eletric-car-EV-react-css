@@ -4,7 +4,7 @@ import Hero from '../components/hero/Hero';
 import Navbar from '../components/navbar/Navbar';
 
 const Home = () => {
-  const [index, setIndex] = React.useState(2); // index background
+  const [index, setIndex] = React.useState(0); // index background
   const [playVideo, setPlayVideo] = React.useState(false); // play video background
 
   return (

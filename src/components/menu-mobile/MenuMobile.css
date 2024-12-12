@@ -36,6 +36,7 @@
 .logo div:hover {
     background-color: tomato;
     border: 2px solid tomato;
+    box-shadow: 0 0 20px tomato;
 }
 .mobile-logo-icon {
     color: #000;
@@ -62,10 +63,10 @@
     color: tomato;
 }
 .mobile-button-contact {
-    background-color: tomato;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.5rem;
+    background-color: #222;
+    color: #ccc;
+    font-weight: 400;
+    font-size: 1.3rem;
     padding: 10px 30px;
     border-radius: 60px;
     border: none;

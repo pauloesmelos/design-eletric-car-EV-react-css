@@ -9,6 +9,18 @@ const Hero = ({ index, playVideo, setPlayVideo, setIndex }) => {
     setIndex(i);
     setPlayVideo(false);
   }
+  const nextSlide = () => {
+    
+  }
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+        setIndex(index => (index + 1 < 3) ? index + 1 : 0);
+    }, 3500);
+    return () => {
+        clearInterval(interval); // limpar o intervalo faz o index incrementar e não travar em dois
+    }
+  }, []);
+
   return (
     <section className="hero-container">
       <div className="hero">
@@ -24,7 +36,7 @@ const Hero = ({ index, playVideo, setPlayVideo, setIndex }) => {
             </div>
             {/* button explore */}
             <div className="div-button-explore left-3">
-                <button className="button-explore">
+                <button onClick={nextSlide} className="button-explore">
                     <span>
                         Explore the features
                     </span>

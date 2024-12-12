@@ -7,7 +7,7 @@ import './Background.css';
 
 const Background = ({ index, playVideo }) => {
   const backgrounds = [Background1, Background2, Background3, Video];
-
+  
   const setBackground = (id, video) => {
     if(video) {
         return (
