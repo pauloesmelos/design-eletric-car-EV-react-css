@@ -17,13 +17,13 @@ const Background = ({ index, playVideo }) => {
         )
     }
     else if(id === 0) {
-        return <img key={"background-1"} className='image-background fade-in' src={backgrounds[0]} />
+        return <img key={"background-1"} className='image-background fade-in' src={backgrounds[0]} loading="lazy" />
     }
     else if(id === 1) {
-        return <img key={"background-2"} className='image-background fade-in' src={backgrounds[1]} />
+        return <img key={"background-2"} className='image-background fade-in' src={backgrounds[1]} loading="lazy" />
     }
     else if(id === 2) {
-        return <img key={"background-3"} className='image-background fade-in' src={backgrounds[2]} />
+        return <img key={"background-3"} className='image-background fade-in' src={backgrounds[2]} loading="lazy" />
     }
   }
   return (
