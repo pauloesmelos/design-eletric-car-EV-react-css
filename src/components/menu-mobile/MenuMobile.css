@@ -1,0 +1,77 @@
+.mobile-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transition: .5s;
+}
+.mobile-container.close {
+    left: -100%;
+    transition: .5s;
+}
+.mobile-div {
+    padding: 2rem;
+    width: 100%;
+}
+.mobile-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.mobile-logo {
+    font-size: 2.5rem;
+}
+.logo div {
+    padding: .6rem;
+    background-color: transparent;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #555;
+}
+.logo div:hover {
+    background-color: tomato;
+    border: 2px solid tomato;
+}
+.mobile-logo-icon {
+    color: #000;
+}
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile_links {
+    font-family: "Outfit";
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.mobile_links li a {
+    color: #444;
+    font-size: 1.7rem;
+    padding: .2rem 0;
+    transition: .4s;
+}
+.mobile_links li a:hover {
+    color: tomato;
+}
+.mobile-button-contact {
+    background-color: tomato;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border-radius: 60px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: .4s;
+}
+.mobile-button-contact:hover {
+    box-shadow: 0 0 25px tomato;
+}

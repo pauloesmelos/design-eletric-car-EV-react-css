@@ -94,4 +94,25 @@
     padding: 1rem;
     border-radius: 100%;
     border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(width < 750px) {
+    .title {
+        font-size: 3rem;
+    }
+    .sub-title {
+        font-size: 3rem;
+    }
+    .button-play {
+        font-size: .8rem;
+    }
+    .doot-active {
+        font-size: 1.7rem;
+    }
+    .doot-not-active {
+        font-size: 1.7rem;
+    }
 }

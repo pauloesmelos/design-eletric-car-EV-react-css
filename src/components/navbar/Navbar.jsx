@@ -1,8 +1,15 @@
 import React from 'react';
-import { IoMdMenu } from "react-icons/io";
+import { FiMenu } from "react-icons/fi";
+import MenuMobile from '../menu-mobile/MenuMobile';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [mobile, setMobile] = React.useState(false);
+
+  const handleMobile = () => {
+    setMobile(!mobile);
+  }
+
   return (
     <header className="navbar_container">
       <nav className="navbar_nav">
@@ -27,10 +34,12 @@ const Navbar = () => {
                 </ul>
             </div>
             {/* mobile */}
-            <div className="icon-mobile">
-                <IoMdMenu size={40} />
+            <div onClick={handleMobile} className="icon-mobile">
+                <FiMenu color="#000" size={30} />
             </div>
         </div>
+        {/* menu mobile */}
+        <MenuMobile mobile={mobile} handleMobile={handleMobile} />
       </nav>
     </header>
   )
