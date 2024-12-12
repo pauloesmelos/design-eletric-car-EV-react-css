@@ -7,7 +7,7 @@ import './Background.css';
 
 const Background = ({ index, playVideo }) => {
   const backgrounds = [Background1, Background2, Background3, Video];
-  
+
   const setBackground = (id, video) => {
     if(video) {
         return (
@@ -28,7 +28,17 @@ const Background = ({ index, playVideo }) => {
   }
   return (
     <div className='background'>
-      {setBackground(index, playVideo)}
+      {backgrounds.map((e, i) => (
+        <>
+          {i === index && !playVideo ? (
+            <img key={i} src={e} className='image-background fade-in' />
+          ): (
+            <video className='fade-in' autoPlay muted loop>
+                <source src={e} />
+            </video>
+          )}
+        </>
+      ))}
     </div>
   )
 }
