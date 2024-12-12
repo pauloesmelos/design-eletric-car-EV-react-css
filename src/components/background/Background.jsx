@@ -28,17 +28,7 @@ const Background = ({ index, playVideo }) => {
   }
   return (
     <div className='background'>
-      {backgrounds.map((e, i) => (
-        <>
-          {i === index && !playVideo ? (
-            <img key={i} src={e} className='image-background fade-in' />
-          ): (
-            <video className='fade-in' autoPlay muted loop>
-                <source src={e} />
-            </video>
-          )}
-        </>
-      ))}
+      {setBackground(index, playVideo)}
     </div>
   )
 }
