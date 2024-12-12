@@ -6,6 +6,7 @@
     left: 0;
     background-color: #fff;
     transition: .5s;
+    z-index: 50;
 }
 .mobile-container.close {
     left: -100%;

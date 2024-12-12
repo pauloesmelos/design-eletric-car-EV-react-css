@@ -15,15 +15,15 @@ const Hero = ({ index, playVideo, setPlayVideo, setIndex }) => {
         <div className="hero-items">
             {/* content */}
             <div>
-                <h2 className="title">
+                <h2 className="title left-1">
                     {data[index].title}
                 </h2>
-                <h4 className="sub-title">
+                <h4 className="sub-title left-2">
                     {data[index].description}
                 </h4>
             </div>
             {/* button explore */}
-            <div>
+            <div className="div-button-explore left-3">
                 <button className="button-explore">
                     <span>
                         Explore the features

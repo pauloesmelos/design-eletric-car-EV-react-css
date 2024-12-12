@@ -9,19 +9,19 @@ const Background = ({ index, playVideo }) => {
   const setBackground = (id, video) => {
     if(video) {
         return (
-            <video autoPlay muted loop>
+            <video className='fade-in' autoPlay muted loop>
                 <source src={Video} />
             </video>
         )
     }
     else if(id === 0) {
-        return <img className='image-background' src={Background1} />
+        return <img key={"background-1"} className='image-background fade-in' src={Background1} />
     }
     else if(id === 1) {
-        return <img className='image-background' src={Background2} />
+        return <img key={"background-2"} className='image-background fade-in' src={Background2} />
     }
     else if(id === 2) {
-        return <img className='image-background' src={Background3} />
+        return <img key={"background-3"} className='image-background fade-in' src={Background3} />
     }
   }
   return (
