@@ -6,22 +6,24 @@ import Video from "../../assets/video1.mp4";
 import './Background.css';
 
 const Background = ({ index, playVideo }) => {
+  const backgrounds = [Background1, Background2, Background3, Video];
+
   const setBackground = (id, video) => {
     if(video) {
         return (
             <video className='fade-in' autoPlay muted loop>
-                <source src={Video} />
+                <source src={backgrounds[3]} />
             </video>
         )
     }
     else if(id === 0) {
-        return <img key={"background-1"} className='image-background fade-in' src={Background1} />
+        return <img key={"background-1"} className='image-background fade-in' src={backgrounds[0]} />
     }
     else if(id === 1) {
-        return <img key={"background-2"} className='image-background fade-in' src={Background2} />
+        return <img key={"background-2"} className='image-background fade-in' src={backgrounds[1]} />
     }
     else if(id === 2) {
-        return <img key={"background-3"} className='image-background fade-in' src={Background3} />
+        return <img key={"background-3"} className='image-background fade-in' src={backgrounds[2]} />
     }
   }
   return (
