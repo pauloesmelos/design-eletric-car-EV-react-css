@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="navbar_items">
             {/* logo */}
             <div>
-                <h1 className="logo">EV-olution</h1>
+                <h1 className="logo">EV-olution.</h1>
             </div>
             {/* menu */}
             <div>

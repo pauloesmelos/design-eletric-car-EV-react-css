@@ -13,8 +13,8 @@ const Hero = ({ index, playVideo, setPlayVideo, setIndex }) => {
     <section className="hero-container">
       <div className="hero">
         <div className="hero-items">
-            {/* content */}
-            <div>
+            {/* content | key fez aplicar as animações quando há mudança de background/content */}
+            <div key={index}>
                 <h2 className="title left-1">
                     {data[index].title}
                 </h2>
